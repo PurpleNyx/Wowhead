@@ -2,12 +2,14 @@ package org.selenium.test.WoWhead;
 
 import static org.junit.Assert.*;
 
+import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -30,6 +32,7 @@ public class WowheadTest {
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\formation\\Desktop\\SUT\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 			driver.get("https://fr.wowhead.com/");
 		}
 		System.out.println("---------- Fin du Before ----------");
@@ -37,8 +40,13 @@ public class WowheadTest {
 	
 	@After
 	public void fin() {
+		try {
 		driver.close();	
 		driver.quit();
+		}
+		catch(WebDriverException e) {
+					e.printStackTrace();
+				}
 	}
 	
 	@Test
