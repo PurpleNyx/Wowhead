@@ -1,0 +1,7 @@
+#surefire_0
+#Mon Feb 18 11:11:45 CET 2019
+browser=Chrome
+user.dir=C\:\\Users\\formation\\ABIworkspace\\WoWhead
+localRepository=C\:\\Users\\formation\\.m2\\repository
+basedir=C\:\\Users\\formation\\ABIworkspace\\WoWhead
+appURL=http\://wowhead.com

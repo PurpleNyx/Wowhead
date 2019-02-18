@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="26217" started-at="2019-02-18T10:11:45Z" finished-at="2019-02-18T10:12:11Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="26217" started-at="2019-02-18T10:11:45Z" finished-at="2019-02-18T10:12:11Z">
+      <class name="org.selenium.test.WoWhead.WowheadTest">
+        <test-method status="PASS" signature="wowheadRechercheTest()[pri:0, instance:wowheadRechercheTest(org.selenium.test.WoWhead.WowheadTest)]" name="wowheadRechercheTest" duration-ms="26164" started-at="2019-02-18T11:11:45Z" finished-at="2019-02-18T11:12:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wowheadRechercheTest -->
+      </class> <!-- org.selenium.test.WoWhead.WowheadTest -->
+      <class name="org.selenium.test.WoWhead.AppTest">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(org.selenium.test.WoWhead.AppTest)]" name="testApp" duration-ms="3" started-at="2019-02-18T11:11:45Z" finished-at="2019-02-18T11:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- org.selenium.test.WoWhead.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
