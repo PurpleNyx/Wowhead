@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class WowheadTest {
@@ -17,10 +18,19 @@ public class WowheadTest {
 	
 	@Before
 	public void init() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\formation\\Desktop\\SUT\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://fr.wowhead.com/");
+		String nav = System.getProperty("nav");
+		if (nav.equals("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\formation\\Desktop\\SUT\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.get("https://fr.wowhead.com/");
+		}
+		if (nav.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\formation\\Desktop\\SUT\\geckodriver.exe");
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.get("https://fr.wowhead.com/");
+		}
 	}
 	
 	@After

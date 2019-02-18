@@ -31,16 +31,84 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">26,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">31,1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">org.selenium.test.WoWhead.WowheadTest</td><td><a href="#m1"><b>wowheadRechercheTest</b>  </a></td><td class="numi">1</td><td>1550486750465</td><td class="numi">30998</td></tr>
 <tr><th colspan="4">Surefire test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">org.selenium.test.WoWhead.AppTest</td><td><a href="#m1"><b>testApp</b>  </a></td><td class="numi">1</td><td>1550484705779</td><td class="numi">3</td></tr>
-<tr class="passedeven"><td rowspan="1">org.selenium.test.WoWhead.WowheadTest</td><td><a href="#m2"><b>wowheadRechercheTest</b>  </a></td><td class="numi">1</td><td>1550484705799</td><td class="numi">26164</td></tr>
+<tr class="passedodd"><td rowspan="1">org.selenium.test.WoWhead.AppTest</td><td><a href="#m2"><b>testApp</b>  </a></td><td class="numi">1</td><td>1550486750445</td><td class="numi">3</td></tr>
 </table>
 <h1>Surefire test</h1>
 <h2 id="m1">org.selenium.test.WoWhead.WowheadTest:wowheadRechercheTest</h2>
+<div style="padding-left:3em">
+<p>Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;FORM294&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1344, moz:profile: C:\Users\formation\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eba32d02-d132-4820-8d9b-42832026d4a9</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+<br/>at org.selenium.test.WoWhead.WowheadTest.fin(WowheadTest.java:39)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+<br/>at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br/>at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+<br/>at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+<br/>at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+<br/>at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+<br/>at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+<br/>at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:365)
+<br/>at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+<br/>at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+<br/>at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+<br/>at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+<br/>at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+<br/>at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+<br/>at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+<br/>at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+<br/>at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+<br/>at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br/>at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+<br/>at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+<br/>at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+<br/>at org.testng.TestRunner$1.run(TestRunner.java:682)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+<br/>at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+<br/>at org.testng.TestRunner.run(TestRunner.java:614)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:212)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+<br/>1 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">org.selenium.test.WoWhead.AppTest:testApp</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>

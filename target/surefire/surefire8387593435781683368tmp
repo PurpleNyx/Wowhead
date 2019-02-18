@@ -1,5 +1,5 @@
 #surefire
-#Mon Feb 18 11:11:45 CET 2019
+#Mon Feb 18 11:45:49 CET 2019
 tc.1=org.selenium.test.WoWhead.WowheadTest
 tc.0=org.selenium.test.WoWhead.AppTest
 testng.configurator=org.apache.maven.surefire.testng.conf.TestNG652Configurator
