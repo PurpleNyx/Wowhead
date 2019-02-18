@@ -18,6 +18,7 @@ public class WowheadTest {
 	
 	@Before
 	public void init() {
+		System.out.println("---------- Début du Before ----------");
 		String nav = System.getProperty("nav");
 		if (nav.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\formation\\Desktop\\SUT\\chromedriver.exe");
@@ -31,6 +32,7 @@ public class WowheadTest {
 			driver.manage().window().maximize();
 			driver.get("https://fr.wowhead.com/");
 		}
+		System.out.println("---------- Fin du Before ----------");
 	}
 	
 	@After
